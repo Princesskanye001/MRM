@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | MRM Sport Capital</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<div id="header">
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html">
+
+                <img
+                    src="Images/Logo.png"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <ul id="sidemenu">
+
+               <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+                <i
+                    class="fas fa-times"
+                    onclick="closemenu()"
+                ></i>
+
+            </ul>
+
+
+            <i
+                class="fas fa-bars"
+                onclick="openmenu()"
+            ></i>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+
+<!-- CONTACT PAGE -->
+
+<main id="contact-page">
+
+
+    <!-- HERO -->
+
+    <section class="contact-hero">
+         <!-- BACKGROUND VIDEO -->
+    <video
+        class="contact-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source
+            src="Images/Meeting.mp4"
+            type="video/mp4"
+        >
+    </video>
+    <!-- VIDEO OVERLAY -->
+    <div class="contact-video-overlay"></div>
+
+
+        <div class="contact-hero-content">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's build
+                <span>what's next.</span>
+            </h1>
+
+            <p class="contact-intro">
+
+                Whether you're looking to explore an investment
+                opportunity, build a strategic partnership or connect
+                with MRM Sport Capital, we'd like to hear from you.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT INFORMATION + FORM -->
+
+    <section class="contact-main">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-information">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Start a
+                <span>conversation.</span>
+            </h2>
+
+
+            <div class="contact-details">
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-detail">
+
+                    <span class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="contact-label">
+                            GENERAL ENQUIRIES
+                        </p>
+
+                        <a
+                            href="mailto:mokgatle@mrmsport.com"
+                        >
+                            mokgatle@mrmsport.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="contact-detail">
+
+                    <span class="contact-icon">
+                        <i class="fas fa-location-dot"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="contact-label">
+                            LOCATION
+                        </p>
+
+                        <p>
+                            Suite 18, Floor1, 35 Ferguson Road,  Illovo,
+                            Sandton, Johannesburg, 2196
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE FORM -->
+
+        <div class="contact-form-container">
+
+            <p class="form-heading">
+                SEND US A MESSAGE
+            </p>
+
+
+            <form
+                action="mailto:mokgatle@mrmsport.com"
+                method="post"
+                enctype="text/plain"
+            >
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="Name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="Email"
+                            placeholder="Your email address"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="Subject"
+                        placeholder="What would you like to discuss?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="Message"
+                        rows="7"
+                        placeholder="Tell us a little about your enquiry..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="contact-submit"
+                >
+
+                    Send Email
+
+                    <span>→</span>
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- VISUAL SECTION -->
+
+    <section class="contact-visual">
+
+        <div class="contact-visual-overlay"></div>
+
+        <div class="contact-visual-content">
+
+            <p class="section-label">
+                MRM SPORT CAPITAL
+            </p>
+
+            <h2>
+                Investing in the
+                <span>future of sport.</span>
+            </h2>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<script>
+
+function openmenu() {
+
+    document.getElementById("sidemenu").style.right = "0";
+
+}
+
+
+function closemenu() {
+
+    document.getElementById("sidemenu").style.right = "-200px";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

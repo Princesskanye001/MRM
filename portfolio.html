@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | MRM Sport Capital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+
+            <nav>
+
+                <a href="index.html">
+                    <img src="Images/LogoC.png" class="logo">
+                </a>
+
+                <ul id="sidemenu">
+
+                   <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+                    <i
+                        class="fas fa-times"
+                        onclick="closemenu()"
+                    ></i>
+
+                </ul>
+
+                <i
+                    class="fas fa-bars"
+                    onclick="openmenu()"
+                ></i>
+
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- PORTFOLIO PAGE -->
+
+    <main id="portfolio-page">
+
+
+        <!-- HERO -->
+
+        <section class="portfolio-hero">
+
+    <!-- BACKGROUND VIDEO -->
+    <video
+        class="portfolio-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source
+            src="Images/PortfolioVideo.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+    <!-- VIDEO OVERLAY -->
+    <div class="portfolio-video-overlay"></div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="portfolio-hero-content">
+
+        <p class="section-label">
+            OUR PORTFOLIO
+        </p>
+
+        <h1>
+            Building the
+            <span>future of sport.</span>
+        </h1>
+
+        <p class="portfolio-intro">
+            We invest in businesses, platforms and opportunities
+            positioned to shape the next generation of the sports
+            ecosystem.
+        </p>
+
+    </div>
+
+</section>
+
+
+        <!-- PORTFOLIO INTRO -->
+
+        <section class="portfolio-introduction">
+
+            <div class="portfolio-intro-heading">
+
+                <p class="section-label">
+                    INVESTMENT PORTFOLIO
+                </p>
+
+                <h2>
+                    Capital.
+                    <span>Capability.</span>
+                    Connection.
+                </h2>
+
+            </div>
+
+            <div class="portfolio-intro-text">
+
+                <p>
+                    MRM Sport Capital's portfolio reflects our belief that
+                    the future of sport will be shaped by businesses that
+                    combine commercial opportunity with innovation,
+                    technology and long-term value creation.
+                </p>
+
+                <p>
+                    Through our platform, we support businesses across
+                    multiple points of the sports ecosystem — from athlete
+                    development and management to technology, intelligence
+                    and commercial services.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FILTER -->
+
+        <section class="portfolio-section">
+
+            <div class="portfolio-header">
+
+                <div>
+
+                    <p class="section-label">
+                        PORTFOLIO
+                    </p>
+
+                    <h2>
+                        Our <span>investments.</span>
+                    </h2>
+
+                </div>
+
+                <div class="portfolio-filter">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="technology"
+                    >
+                        Technology
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="athlete"
+                    >
+                        Athlete
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="development"
+                    >
+                        Development
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="advisory"
+                    >
+                        Advisory
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PORTFOLIO GRID -->
+
+            <div class="portfolio-grid">
+
+
+                <!-- KICK ID -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="technology"
+                >
+
+                    <div class="portfolio-card-image kick-id">
+                         <img src="Images/KickID.jpg" alt="Kick ID South Africa">
+
+                        <span class="portfolio-number">
+                            01
+                        </span>
+
+                        <span class="portfolio-status">
+                            TECHNOLOGY
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <p class="portfolio-category">
+                            TECHNOLOGY · PERFORMANCE · INTELLIGENCE
+                        </p>
+
+                        <h3>
+                            Kick ID
+                        </h3>
+
+                        <p>
+                            AI-powered football performance intelligence
+                            providing objective, data-driven player and
+                            coach ratings.
+                        </p>
+
+                        <a
+                            href="case-studies.html"
+                            class="portfolio-link"
+                        >
+                            Explore
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ATHENA -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="athlete"
+                >
+
+                    <div class="portfolio-card-image athena">
+                         <img src="Images/Athena.jpg"
+                 alt="Athena Sports Management">
+
+                        <span class="portfolio-number">
+                            02
+                        </span>
+
+                        <span class="portfolio-status">
+                            ATHLETE
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <p class="portfolio-category">
+                            ATHLETE MANAGEMENT · COMMERCIALISATION
+                        </p>
+
+                        <h3>
+                            Athena Sports Management
+                        </h3>
+
+                        <p>
+                            A sports management platform focused on
+                            athlete commercialisation, career development
+                            and creating opportunities across sport.
+                        </p>
+
+                        <a
+                            href="case-studies.html"
+                            class="portfolio-link"
+                        >
+                            Explore
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ATHLETE ASSIST -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="athlete"
+                >
+
+                    <div class="portfolio-card-image athlete-assist">
+                         <img src="Images/AthleteAssist.jpg"
+                 alt="Athlete Assist">
+
+
+                        <span class="portfolio-number">
+                            03
+                        </span>
+
+                        <span class="portfolio-status">
+                            ATHLETE
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <p class="portfolio-category">
+                            TRANSITION · EDUCATION · FINANCIAL LITERACY
+                        </p>
+
+                        <h3>
+                            Athlete Assist
+                        </h3>
+
+                        <p>
+                            A digital platform designed to support athletes
+                            beyond their playing careers through education,
+                            career planning and financial development.
+                        </p>
+
+                        <a
+                            href="case-studies.html"
+                            class="portfolio-link"
+                        >
+                            Explore
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COMPLETE FOOTBALLER -->
+
+                <article
+                    class="portfolio-card portfolio-card-wide"
+                    data-category="development"
+                >
+
+                    <div class="portfolio-card-image cfdc">
+                        <img src="Images/CompleteFootballer.jpg"
+                 alt="Complete Footballer Development Centre">
+
+
+                        <span class="portfolio-number">
+                            04
+                        </span>
+
+                        <span class="portfolio-status">
+                            DEVELOPMENT
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <p class="portfolio-category">
+                            TALENT · DEVELOPMENT · PATHWAYS
+                        </p>
+
+                        <h3>
+                            Complete Footballer
+                            Development Centre
+                        </h3>
+
+                        <p>
+                            A football development platform focused on
+                            identifying, developing and advancing talent
+                            through academies, clinics, tournaments and
+                            structured pathways.
+                        </p>
+
+                        <a
+                            href="case-studies.html"
+                            class="portfolio-link"
+                        >
+                            Explore
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MRM ADVISORY -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="advisory"
+                >
+
+                    <div class="portfolio-card-image advisory">
+                          <img src="Images/MRMAdvisory.jpg"
+                 alt="MRM Advisory">
+
+                        <span class="portfolio-number">
+                            05
+                        </span>
+
+                        <span class="portfolio-status">
+                            ADVISORY
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <p class="portfolio-category">
+                            FINANCE · CORPORATE · COMMERCIAL
+                        </p>
+
+                        <h3>
+                            MRM Advisory
+                        </h3>
+
+                        <p>
+                            Strategic advisory, transaction services,
+                            capital raising, M&A, joint ventures and
+                            commercial alliances.
+                        </p>
+
+                        <a
+                            href="case-studies.html"
+                            class="portfolio-link"
+                        >
+                            Explore
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="portfolio-cta">
+
+            <div>
+
+                <p class="section-label">
+                    PARTNER WITH US
+                </p>
+
+                <h2>
+                    Building what comes
+                    <span>next in sport.</span>
+                </h2>
+
+                <a
+                    href="contact.html"
+                    class="portfolio-cta-button"
+                >
+                    Start a conversation
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- MOBILE MENU -->
+
+    <script>
+
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+
+
+        /* PORTFOLIO FILTER */
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
+
+        const portfolioCards =
+            document.querySelectorAll(".portfolio-card");
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                filterButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+                button.classList.add("active");
+
+                const filter =
+                    button.getAttribute("data-filter");
+
+
+                portfolioCards.forEach(card => {
+
+                    const category =
+                        card.getAttribute("data-category");
+
+
+                    if (
+                        filter === "all" ||
+                        category === filter
+                    ) {
+
+                        card.style.display = "grid";
+
+                        setTimeout(() => {
+                            card.classList.add("show");
+                        }, 10);
+
+                    } else {
+
+                        card.classList.remove("show");
+
+                        setTimeout(() => {
+                            card.style.display = "none";
+                        }, 250);
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

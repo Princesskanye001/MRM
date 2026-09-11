@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insights | MRM Sport Capital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<script>
+
+    /* =========================================
+       CASE STUDY INFORMATION
+    ========================================= */
+
+    const caseStudies = {
+
+        case1: {
+            number: "CASE STUDY 01",
+
+            category:
+                "ADVISORY & INSTITUTIONAL STRUCTURING",
+
+            title:
+                "Basketball Africa League Advisory",
+
+            description:
+                "MRM Sport Capital provides advisory support in relation to institutional structuring and governance enhancement within the basketball ecosystem, with a focus on supporting capital readiness and strengthening strategic positioning. The mandate involves contributing to the development of frameworks intended to improve operational structure, support investment preparedness and align broader commercial objectives with long-term growth ambitions. Through this engagement, the Group demonstrated capability in combining advisory expertise with practical structuring support within a global sports property environment."
+        },
+
+
+        case2: {
+            number: "CASE STUDY 02",
+
+            category:
+                "PARTNERSHIPS & DEVELOPMENT",
+
+            title:
+                "Football Foundation Africa (Kenya)",
+
+            description:
+                "MRM Sport Capital has supported partnership and development opportunities involving Football Foundation Africa, focused on cross border collaboration, ecosystem development and strategic growth opportunities in the regional football market. The engagement reflects the Group’s ability to structure partnerships that combine development objectives with commercial opportunity."
+        },
+
+
+        case3: {
+            number: "CASE STUDY 03",
+
+            category:
+                "TECHNOLOGY & PERFORMANCE",
+
+            title:
+                "Royal Bafokeng Sports",
+
+            description:
+                "Through Kick ID as a strategic partner platform, MRM Sport Capital has supported engagements linked to strategic advisory and development opportunities involving Royal Bafokeng Sports. The engagement has focused on performance intelligence, stakeholder engagement and broader ecosystem development opportunities, reflecting the Group’s ability to support institutional stakeholders through technology-enabled and commercially relevant solutions."
+        },
+
+
+        case4: {
+            number: "CASE STUDY 04",
+
+            category:
+                "ATHLETE COMMERCIALISATION",
+
+            title:
+                "Mika Abrahams",
+
+            description:
+                "Athena Sports Management, a subsidiary of MRM Sport Capital, has supported opportunities linked to athlete commercialisation and talent pipeline development for its client Mika Abrahams. The engagement has focused on strategic advisory, commercial positioning and supporting athlete-related ecosystem opportunities, demonstrating the Group’s broader capability in talent and commercial management."
+        }
+
+    };
+
+
+    /* =========================================
+       OPEN CASE STUDY
+    ========================================= */
+
+    function openCaseStudy(caseId) {
+
+        const study = caseStudies[caseId];
+
+        if (!study) return;
+
+
+        document.getElementById("modal-case-number").textContent =
+            study.number;
+
+        document.getElementById("modal-case-category").textContent =
+            study.category;
+
+        document.getElementById("modal-case-title").textContent =
+            study.title;
+
+        document.getElementById("modal-case-description").textContent =
+            study.description;
+
+
+        document
+            .getElementById("case-study-modal")
+            .classList.add("active");
+
+        document.body.classList.add("modal-open");
+    }
+
+
+    /* =========================================
+       CLOSE CASE STUDY
+    ========================================= */
+
+    function closeCaseStudy() {
+
+        document
+            .getElementById("case-study-modal")
+            .classList.remove("active");
+
+        document.body.classList.remove("modal-open");
+    }
+
+
+    /* =========================================
+       CLOSE WITH ESCAPE KEY
+    ========================================= */
+
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+            closeCaseStudy();
+        }
+
+    });
+
+</script>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <a href="index.html">
+                    <img src="Images/LogoC.png" class="logo">
+                </a>
+
+                <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- PLATFORM -->
+
+    <main id="insights-page">
+
+        <!-- PLATFORM HERO -->
+       <section class="insights-hero">
+
+    <!-- BACKGROUND VIDEO -->
+    <video
+        class="insights-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source
+            src="Images/PlatformVideo.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+    <!-- VIDEO OVERLAY -->
+    <div class="insights-video-overlay"></div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="insights-hero-content">
+
+        <p class="section-label">
+            INSIGHTS
+        </p>
+
+        <h1>
+            Case Studies
+        </h1>
+        
+
+        <p class="insights-intro">
+            Selected engagements demonstrating MRM Sport Capital's
+                approach to investment, advisory, partnerships and
+                sports ecosystem development.
+        </p>
+
+    </div>
+     </section>
+
+
+    <!-- INTRO -->
+    <section class="insights-intro">
+
+        <span class="section-label">OUR WORK</span>
+
+        <h2>
+            Building value across the
+            sporting ecosystem.
+        </h2>
+
+        <p>
+            Our engagements span institutional advisory, strategic
+            partnerships, athlete commercialisation, technology,
+            performance intelligence and ecosystem development.
+        </p>
+
+    </section>
+
+
+    <!-- CASE STUDIES -->
+    <section class="case-studies-section">
+
+        <div class="case-studies-grid">
+
+
+            <!-- =================================
+                 CASE STUDY 01
+            ================================= -->
+
+            <article class="case-study-card">
+
+                <div class="case-study-image">
+
+                    <!-- ADD LOGO / IMAGE HERE -->
+                    <img
+                        src="images/case-study-1.jpg"
+                        alt="Basketball Africa League"
+                    >
+
+                    <div class="case-number">
+                        01
+                    </div>
+
+                    <div class="case-image-overlay"></div>
+
+                </div>
+
+
+                <div class="case-study-content">
+
+    <span class="case-category">
+        ADVISORY & INSTITUTIONAL STRUCTURING
+    </span>
+
+    <h3>
+        Basketball Africa League Advisory
+    </h3>
+
+    <p>
+        Advisory support focused on institutional structuring,
+        governance enhancement and capital readiness within
+        the basketball ecosystem.
+    </p>
+
+    <button
+        class="case-study-button"
+        onclick="openCaseStudy('case1')"
+    >
+        View Case Study
+        <span>→</span>
+    </button>
+
+</div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 CASE STUDY 02
+            ================================= -->
+
+            <article class="case-study-card">
+
+                <div class="case-study-image">
+
+                    <!-- ADD LOGO / IMAGE HERE -->
+                    <img
+                        src="images/case-study-2.jpg"
+                        alt="Football Foundation Africa"
+                    >
+
+                    <div class="case-number">
+                        02
+                    </div>
+
+                    <div class="case-image-overlay"></div>
+
+                </div>
+
+
+                <div class="case-study-content">
+
+    <span class="case-category">
+        PARTNERSHIPS & DEVELOPMENT
+    </span>
+
+    <h3>
+        Football Foundation Africa
+    </h3>
+
+    <p>
+        Supporting cross-border collaboration, ecosystem
+        development and strategic growth opportunities within
+        the regional football market.
+    </p>
+
+    <button
+        class="case-study-button"
+        onclick="openCaseStudy('case2')"
+    >
+        View Case Study
+        <span>→</span>
+    </button>
+
+</div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 CASE STUDY 03
+            ================================= -->
+
+            <article class="case-study-card">
+
+                <div class="case-study-image">
+
+                    <!-- ADD LOGO / IMAGE HERE -->
+                    <img
+                        src="images/case-study-3.jpg"
+                        alt="Royal Bafokeng Sports"
+                    >
+
+                    <div class="case-number">
+                        03
+                    </div>
+
+                    <div class="case-image-overlay"></div>
+
+                </div>
+
+
+                <div class="case-study-content">
+
+    <span class="case-category">
+        TECHNOLOGY & PERFORMANCE
+    </span>
+
+    <h3>
+        Royal Bafokeng Sports
+    </h3>
+
+    <p>
+        Strategic advisory and development opportunities
+        supported through Kick ID, with a focus on performance
+        intelligence and ecosystem development.
+    </p>
+
+    <button
+        class="case-study-button"
+        onclick="openCaseStudy('case3')"
+    >
+        View Case Study
+        <span>→</span>
+    </button>
+
+</div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 CASE STUDY 04
+            ================================= -->
+
+            <article class="case-study-card">
+
+                <div class="case-study-image">
+
+                    <!-- ADD LOGO / IMAGE HERE -->
+                    <img
+                        src="images/case-study-4.jpg"
+                        alt="Mika Abrahams"
+                    >
+
+                    <div class="case-number">
+                        04
+                    </div>
+
+                    <div class="case-image-overlay"></div>
+
+                </div>
+
+
+               <div class="case-study-content">
+
+    <span class="case-category">
+        ATHLETE COMMERCIALISATION
+    </span>
+
+    <h3>
+        Mika Abrahams
+    </h3>
+
+    <p>
+        Strategic advisory and commercial positioning
+        supporting athlete commercialisation and talent
+        pipeline development.
+    </p>
+
+    <button
+        class="case-study-button"
+        onclick="openCaseStudy('case4')"
+    >
+        View Case Study
+        <span>→</span>
+    </button>
+
+</div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CASE STUDY MODAL
+    ========================================== -->
+
+    <div
+        id="case-study-modal"
+        class="case-study-modal"
+    >
+
+        <div
+            class="case-modal-overlay"
+            onclick="closeCaseStudy()"
+        ></div>
+
+
+        <div class="case-modal-content">
+
+            <button
+                class="case-modal-close"
+                onclick="closeCaseStudy()"
+            >
+                &times;
+            </button>
+
+
+            <div class="case-modal-header">
+
+                <span
+                    id="modal-case-number"
+                    class="section-label"
+                ></span>
+
+                <span
+                    id="modal-case-category"
+                    class="modal-case-category"
+                ></span>
+
+                <h2 id="modal-case-title"></h2>
+
+            </div>
+
+
+            <div class="case-modal-body">
+
+                <p id="modal-case-description"></p>
+
+
+                <div
+                    id="modal-case-link-container"
+                    class="case-modal-link-container"
+                >
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    </main>
+
+
+    <!-- MOBILE MENU -->
+
+    <script>
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

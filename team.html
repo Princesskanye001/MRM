@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Team | MRM Sport Capital</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<div id="header">
+
+    <div class="container">
+
+        <nav>
+
+            <a href="index.html">
+
+                <img
+                    src="Images/Logo.png"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <ul id="sidemenu">
+
+                <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+                <i
+                    class="fas fa-times"
+                    onclick="closemenu()"
+                ></i>
+
+            </ul>
+
+
+            <i
+                class="fas fa-bars"
+                onclick="openmenu()"
+            ></i>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+<!-- TEAM PAGE -->
+<main id="team-page">
+
+    <!-- TEAM HERO -->
+    <section class="team-hero">
+        <!-- BACKGROUND VIDEO -->
+    <video
+        class="contact-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source
+            src="Images/Team.mp4"
+            type="video/mp4"
+        >
+    </video>
+    <!-- VIDEO OVERLAY -->
+    <div class="contact-video-overlay"></div>
+
+        <div class="team-hero-overlay"></div>
+
+        <div class="team-hero-content">
+            <span class="section-label">OUR PEOPLE</span>
+            <h1>Team</h1>
+            <p>
+                Experienced leaders, specialists and strategic partners
+                driving the future of sport investment.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FOUNDERS & LEADERSHIP -->
+    <section class="team-section founders-section">
+
+        <div class="section-heading">
+            <span class="section-label">FOUNDERS & LEADERSHIP</span>
+            <h2>Leadership with purpose.</h2>
+            <p>
+                MRM Sport Capital brings together experienced professionals
+                across investment, legal, strategy and sport.
+            </p>
+        </div>
+
+
+        <div class="founders-grid">
+
+            <!-- MOKGATLE -->
+            <article class="team-card founder-card">
+
+                <div class="team-image">
+                    <img src="images/Mokgatle Mokgatle.jpg" alt="Mokgatle Mokgatle">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('mokgatle')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">CO-FOUNDER & EXECUTIVE DIRECTOR</span>
+
+                    <h3>Mokgatle Mokgatle</h3>
+
+                    <p class="team-speciality">
+                        Legal & Commercial
+                    </p>
+
+                    <span class="experience">15 YRS</span>
+                </div>
+
+            </article>
+
+
+            <!-- IAN -->
+            <article class="team-card founder-card">
+
+                <div class="team-image">
+                    <img src="images/ian-briggs.jpg" alt="Ian Briggs">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('ian')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">CO-FOUNDER & DIRECTOR</span>
+
+                    <h3>Ian Briggs</h3>
+
+                    <p class="team-speciality">
+                        Investment Banking
+                    </p>
+
+                    <span class="experience">25 YRS</span>
+                </div>
+
+            </article>
+
+
+            <!-- YUSSIF -->
+            <article class="team-card founder-card">
+
+                <div class="team-image">
+                    <img src="images/yussif-chibsah.jpg" alt="Yussif A Chibsah">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('yussif')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">CO-FOUNDER & GLOBAL STRATEGY PARTNER</span>
+
+                    <h3>Yussif A Chibsah</h3>
+
+                    <p class="team-speciality">
+                        Ex-Professional + Scout
+                    </p>
+
+                    <span class="experience">15 YRS</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- REST OF TEAM -->
+    <section class="team-section team-section-dark">
+
+        <div class="section-heading light-heading">
+            <span class="section-label">OUR TEAM</span>
+            <h2>Specialists across the sporting ecosystem.</h2>
+            <p>
+                A multidisciplinary team combining finance, legal,
+                performance, technology, sustainability and athlete
+                development expertise.
+            </p>
+        </div>
+
+
+        <div class="team-grid">
+
+            <!-- TSHIAMO -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/tshiamo-molefe.jpg" alt="Tshiamo Molefe">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('tshiamo')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">SUSTAINABILITY & FINANCE DIRECTOR</span>
+                    <h3>Tshiamo Molefe</h3>
+                    <p class="team-speciality">
+                        Sports Venture Finance · Infrastructure Strategy · Sustainable Development
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- FARRIL -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/farril-rosen.jpg" alt="Farril Rosen">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('farril')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">HEAD OF LEGAL</span>
+                    <h3>Farril Rosen</h3>
+                    <p class="team-speciality">
+                        FIFA Licensed Agent · Regulatory & Contractual Governance
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- MULALO -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/mulalo-mbulaheni.jpg" alt="Mulalo Mbulaheni">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('mulalo')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">SENIOR ANALYST</span>
+                    <h3>Mulalo Mbulaheni</h3>
+                    <p class="team-speciality">
+                        Performance Analysis · Athlete Management · Data & Reporting Integrity
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- LEE -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/lee-chalmer.jpg" alt="Lee Chalmer">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('lee')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">BUSINESS DEVELOPMENT PARTNER</span>
+                    <h3>Lee Chalmer</h3>
+                    <p class="team-speciality">
+                        UEFA Licensed Coach · Football Philosophy & Methodology
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- JESSE -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/jesse-donn.jpg" alt="Jesse Donn">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('jesse')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">PLAYER TRANSITION SPECIALIST</span>
+                    <h3>Jesse Donn</h3>
+                    <p class="team-speciality">
+                        Career Planning · Education Pathways · Athlete Support
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- KURT -->
+            <article class="team-card">
+
+                <div class="team-image">
+                    <img src="images/kurt-hensberg.jpg" alt="Kurt Hensberg">
+                    <div class="image-overlay"></div>
+
+                    <button
+                        class="view-profile"
+                        onclick="openProfile('kurt')">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="team-info">
+                    <span class="team-role">SPORTS SCIENCE & TECHNOLOGY SPECIALIST</span>
+                    <h3>Kurt Hensberg</h3>
+                    <p class="team-speciality">
+                        Performance Monitoring · Injury Prevention · Exercise Physiology
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PROFILE MODAL -->
+<div id="profile-modal" class="profile-modal">
+
+    <div class="profile-modal-overlay" onclick="closeProfile()"></div>
+
+    <div class="profile-modal-content">
+
+        <button
+            class="close-profile"
+            onclick="closeProfile()">
+            &times;
+        </button>
+
+        <div class="profile-modal-image">
+            <img id="modal-image" src="" alt="">
+        </div>
+
+        <div class="profile-modal-info">
+
+            <span id="modal-role" class="section-label"></span>
+
+            <h2 id="modal-name"></h2>
+
+            <p id="modal-speciality" class="modal-speciality"></p>
+
+            <div class="gold-line"></div>
+
+            <p id="modal-description"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const profiles = {
+
+    mokgatle: {
+        name: "Mokgatle Mokgatle",
+        role: "Co-Founder & Executive Director",
+        speciality: "Legal & Commercial · 15 YRS",
+        image: "images/Mokgatle Mokgatle.jpg",
+        description:
+            "Mokgatle provides executive leadership across MRM Sport Capital, with a focus on legal, commercial and strategic matters."
+    },
+
+    ian: {
+        name: "Ian Briggs",
+        role: "Co-Founder & Director",
+        speciality: "Investment Banking · 25 YRS",
+        image: "images/ian-briggs.jpg",
+        description:
+            "Ian brings extensive investment banking experience to MRM Sport Capital, supporting investment strategy, transaction structuring and commercial opportunities."
+    },
+
+    yussif: {
+        name: "Yussif A Chibsah",
+        role: "Co-Founder & Global Strategy Partner",
+        speciality: "Ex-Professional + Scout · 15 YRS",
+        image: "images/yussif-chibsah.jpg",
+        description:
+            "Yussif brings professional sporting experience and scouting expertise to MRM's global strategy and sporting ecosystem."
+    },
+
+    tshiamo: {
+        name: "Tshiamo Molefe",
+        role: "Sustainability & Finance Director",
+        speciality: "Sports Venture Finance · Infrastructure Strategy · Sustainable Development",
+        image: "images/tshiamo-molefe.jpg",
+        description:
+            "Tshiamo leads the sustainable sporting, stakeholder management and project architecture of MRM Sport Capital. Her expertise lies in venture finance, structured sports investment modelling, and sustainable sports infrastructure development. She is responsible for effectively leveraging synergies, capital structuring and financial modelling, and long-term sustainability planning across MRM’s projects. Tshiamo ensures that each venture aligns with disciplined financial governance while supporting scalable growth within complex sporting ecosystems."
+    },
+
+    farril: {
+        name: "Farril Rosen",
+        role: "Head of Legal",
+        speciality: "FIFA Licensed Agent · Regulatory & Contractual Governance",
+        image: "images/farril-rosen.jpg",
+        description:
+            "Farril leads the legal function of MRM Sport Capital. As a FIFA Licensed Agent, he oversees contract negotiation, regulatory compliance, disciplinary matters, and governance structuring. He advises executive leadership on legal risk management, player representation frameworks, international transfer regulations, and cross-border contractual structuring — ensuring that MRM operates with institutional integrity across all jurisdictions."
+    },
+
+    mulalo: {
+        name: "Mulalo Mbulaheni",
+        role: "Senior Analyst",
+        speciality: "Performance Analysis · Athlete Management · Data & Reporting Integrity",
+        image: "images/mulalo-mbulaheni.jpg",
+        description:
+            "Mulalo drives analytical performance and athlete management systems within MRM’s ecosystem. His expertise includes performance analysis, structured athlete monitoring, and data-driven reporting. He ensures integrity across data collection, performance metrics, and technology integration, supporting evidence-based decision-making across development and elite performance platforms. Further, he leads teams in the group with commercial and client / stakeholder oversight."
+    },
+
+    lee: {
+        name: "Lee Chalmer",
+        role: "Business Development Partner",
+        speciality: "UEFA Licensed Coach · Football Philosophy & Methodology Specialist",
+        image: "images/lee-chalmer.jpg",
+        description:
+            "Lee leads strategic business development initiatives within football markets. As a UEFA Licensed Coach and methodology specialist, he focuses on opportunity origination, football ecosystem structuring, and international partnership development. He contributes to the identification and structuring of commercially viable football projects aligned with MRM’s long-term strategy."
+    },
+
+    jesse: {
+        name: "Jesse Donn",
+        role: "Player Transition Specialist",
+        speciality: "Career Planning · Education Pathways · Athlete Support Structures",
+        image: "images/jesse-donn.jpg",
+        description:
+            "Jesse specialises in player lifecycle management and career transition planning. He supports athletes through career counselling, educational alignment, and post performance pathway structuring. His role ensures holistic athlete development, resource coordination, and research-driven support systems that extend beyond on-field performance."
+    },
+
+    kurt: {
+        name: "Kurt Hensberg",
+        role: "Sports Science & Technology Specialist",
+        speciality: "Performance Monitoring · Injury Prevention · Exercise Physiology",
+        image: "images/kurt-hensberg.jpg",
+        description:
+            "Kurt leads the integration of sports science and technology within MRM’s performance environments. His expertise spans performance analytics, injury prevention protocols, rehabilitation frameworks, and exercise physiology. He ensures that athlete performance is optimised through data-driven methodologies, wearable technologies, and evidence-based training systems. Kurt is responsible for leading Kick ID South Africa and its integration into sub-Saharan Africa."
+    }
+
+};
+
+
+function openProfile(person) {
+
+    const profile = profiles[person];
+
+    document.getElementById("modal-name").textContent = profile.name;
+    document.getElementById("modal-role").textContent = profile.role;
+    document.getElementById("modal-speciality").textContent = profile.speciality;
+    document.getElementById("modal-description").textContent = profile.description;
+
+    document.getElementById("modal-image").src = profile.image;
+    document.getElementById("modal-image").alt = profile.name;
+
+    document
+        .getElementById("profile-modal")
+        .classList.add("active");
+
+    document.body.classList.add("modal-open");
+}
+
+
+function closeProfile() {
+
+    document
+        .getElementById("profile-modal")
+        .classList.remove("active");
+
+    document.body.classList.remove("modal-open");
+}
+
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeProfile();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
