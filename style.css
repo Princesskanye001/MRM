@@ -211,6 +211,13 @@ main {
 .know-more:hover i {
     transform: translateX(7px);
 }
+.site-footer-home { 
+  background: #1b1f2a;
+  color: #ffffff;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 111px; 
+}
 
 /* ------------------about------------------ */
 
@@ -2664,6 +2671,116 @@ body.modal-open {
 
 }
 /* =========================
+   PARTNERSHIPS SLIDERS
+========================= */
+
+.partnerships-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 110px 0 10px;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+/* HEADING */
+
+.partnerships-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.partnerships-heading span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #b89b5e;
+    margin-bottom: 12px;
+}
+
+.partnerships-heading h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 500;
+    color: #071b2f;
+}
+
+/* SLIDER */
+
+.partnerships-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+
+.partnerships-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: partnershipScroll 30s linear infinite;
+}
+
+/* LOGOS */
+
+.partner-logo {
+    width: 220px;
+    height: 100px;
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.partner-logo img {
+    max-width: 170px;
+    max-height: 75px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* LEFT → RIGHT */
+
+@keyframes partnershipScroll {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .partnerships-section {
+        padding: 90px 0 60px;
+    }
+
+    .partnerships-heading {
+        margin-bottom: 35px;
+    }
+
+    .partnerships-heading h2 {
+        font-size: 28px;
+    }
+
+    .partner-logo {
+        width: 170px;
+        margin: 0 20px;
+    }
+
+    .partner-logo img {
+        max-width: 140px;
+        max-height: 65px;
+    }
+}
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -2672,7 +2789,7 @@ body.modal-open {
     color: #ffffff;
     padding: 15px 0;
     width: 100%;
-    margin-top: 120px;
+    margin-top: 0;
 }
 
 .footer-inner {
