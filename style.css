@@ -2663,6 +2663,90 @@ body.modal-open {
     }
 
 }
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background: #1b1f2a;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.footer-inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT SIDE */
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-left img {
+    width: 105px;
+    height: auto;
+    display: block;
+}
+
+/* SOCIAL ICONS */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: opacity 0.3s ease,
+                transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+
+    .footer-inner {
+        padding: 0 25px;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .footer-left img {
+        width: 90px;
+    }
+
+    .footer-socials {
+        gap: 28px;
+    }
+
+}
 
 /* -------------css for small screen-------------- */
 nav .fas {
