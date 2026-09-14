@@ -550,9 +550,77 @@ document.addEventListener("keydown", function(event) {
 });
 
 </script>
+    <!-- MOBILE MENU -->
 
-</body>
-<!-- PARTNERSHIPS -->
+    <script>
+
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+
+
+        /* PORTFOLIO FILTER */
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
+
+        const portfolioCards =
+            document.querySelectorAll(".portfolio-card");
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                filterButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+                button.classList.add("active");
+
+                const filter =
+                    button.getAttribute("data-filter");
+
+
+                portfolioCards.forEach(card => {
+
+                    const category =
+                        card.getAttribute("data-category");
+
+
+                    if (
+                        filter === "all" ||
+                        category === filter
+                    ) {
+
+                        card.style.display = "grid";
+
+                        setTimeout(() => {
+                            card.classList.add("show");
+                        }, 10);
+
+                    } else {
+
+                        card.classList.remove("show");
+
+                        setTimeout(() => {
+                            card.style.display = "none";
+                        }, 250);
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+    <!-- PARTNERSHIPS -->
 <section class="partnerships-section">
 
     <div class="partnerships-heading">
@@ -617,4 +685,8 @@ document.addEventListener("keydown", function(event) {
 
     </div>
 </footer>
+
+</body>
+
+
 </html>
