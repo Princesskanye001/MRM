@@ -436,7 +436,7 @@ main {
 }
 
 
-/* MOBILE */
+/* MOBILE
 
 @media only screen and (max-width: 768px) {
 
@@ -473,7 +473,7 @@ main {
     .pillar:last-child {
         border-bottom: none;
     }
-}
+} */
 
 
 /* =========================
@@ -1010,7 +1010,7 @@ main {
    MOBILE
 ========================================= */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
 
     .case-studies-grid {
         grid-template-columns: 1fr;
@@ -1058,7 +1058,7 @@ main {
     }
 
 }
-
+ */
 
 
 /* ================================
@@ -1498,7 +1498,7 @@ main {
 }
 
 
-/* MOBILE */
+/* MOBILE
 
 @media only screen and (max-width: 768px) {
 
@@ -1551,7 +1551,7 @@ main {
         padding: 100px 8%;
     }
 
-}
+} */
 
 /* =========================================
    TEAM PAGE
@@ -2081,7 +2081,7 @@ body.modal-open {
    MOBILE
 ========================================= */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
 
     .founders-grid,
     .team-grid {
@@ -2151,7 +2151,7 @@ body.modal-open {
         font-size: 35px;
     }
 
-}
+} */
 
 /* =================================
    CONTACT PAGE
@@ -2598,7 +2598,7 @@ body.modal-open {
 }
 
 
-/* MOBILE */
+/* MOBILE
 
 @media only screen and (max-width: 768px) {
 
@@ -2669,7 +2669,7 @@ body.modal-open {
 
     }
 
-}
+} */
 /* =========================
    PARTNERSHIPS SLIDERS
 ========================= */
