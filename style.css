@@ -2869,19 +2869,13 @@ body.modal-open {
 nav .fas {
   display: none;
 }
-@media (max-width: 768px) {
-  #header {
-    background-size: contain; /* Try 'contain' instead of 'cover' */
-    min-height: 100vh;
-  }
-}
+
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+    min-height: auto;
+        height: auto;
+        background: none;
   }
   .logo {
     width: 150px; /* Default size */
@@ -2911,12 +2905,7 @@ nav .fas {
     font-size: 8vw;
   }
 
-  #about {
-    font-size: 4vw;
-    margin-right: 20vw;
-    padding: 2vh;
-    width: 90vw;
-  }
+
   #about h1 {
     margin-top: 15;
   }
@@ -3061,4 +3050,48 @@ nav .fas {
   #click\ me {
     display: none;
   }
+}
+
+/* =========================
+   MOBILE SIDE MENU
+========================= */
+
+@media only screen and (max-width: 768px) {
+
+    nav .fas {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: #ffffff;
+        z-index: 2000;
+        padding-top: 80px;
+        transition: right 0.4s ease;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
