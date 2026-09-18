@@ -12,6 +12,11 @@ body {
   color: #080808;
   overflow-x: hidden;
 }
+/* html,
+body {
+    background-color: #ffffff;
+    color: #111111;
+} */
 
 #header {
     font-size: 25px;
