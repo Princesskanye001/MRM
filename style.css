@@ -3120,12 +3120,13 @@ nav .fas {
     .header-summary {
   position: absolute;
   z-index: 5;
-  font-style: italic;   
+  font-style: italic; 
+  font-weight: bold;  
 
     width: 80%;
     max-width: 350px;
 
-    margin-left: 35px;
+    margin-left: 30px;
     margin-top: 45px;
 
     color: white;
