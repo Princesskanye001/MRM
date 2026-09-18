@@ -3091,7 +3091,7 @@ nav .fas {
 
      .header-text {
         position: absolute;
-        top: 10%;
+        top: 15%;
         left: 45%;
 
         width: 90%;
@@ -3127,8 +3127,8 @@ nav .fas {
     width: 80%;
     max-width: 350px;
 
-    margin-left: 20px;
-    margin-top: 100px;
+    margin-left: 40px;
+    margin-top: 130px;
 
     color: white;
     font-size: 15px;
