@@ -3091,10 +3091,11 @@ nav .fas {
 
      .header-text {
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 45%;
 
-        width: 200%;
+        width: 90%;
+        max-width: 600px;
         margin: 0;
         padding: 0;
 
@@ -3103,7 +3104,7 @@ nav .fas {
         text-align: center;
 
         font-style: italic;
-        font-size: 5vw;
+        font-size: 6vw;
         color: #ca9420;
 
         z-index: 5;
@@ -3126,12 +3127,12 @@ nav .fas {
     width: 80%;
     max-width: 350px;
 
-    margin-left: 30px;
-    margin-top: 45px;
+    margin-left: 20px;
+    margin-top: 100px;
 
     color: white;
-    font-size: 12px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.2;
 
     text-align: left;
 
@@ -3140,7 +3141,7 @@ nav .fas {
     position: absolute;
     left: 45%;
     transform: translateX(-50%);
-    top: 75%;
+    top: 90%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
